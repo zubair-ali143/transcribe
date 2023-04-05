@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="site description here..." />
+    <meta name="keywords" content="keyword1, keyword2, keyword3" />
+    <meta name="author" content="site author" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Site Title -->
+    <title>Dashboard</title>
+
+    <!-- Imports -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link
+      href="assets/plugins/global/plugins.bundle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <main>
+      <!--Header start-->
+      <header>
+      <div class="flex flex-between">
+      <!--Logo start-->
+      <div class="logo-box">
+            <div class="logo">
+              <img src="./assets/images/logo.png" alt="" />
+            </div>
+          </div>
+      <!--Logo end-->
+      <!--right content Start-->
+      <div class="flex flex-between header-right-content">
+            <div class="search-box">
+              <form action="#">
+                <div class="form-control">
+                  <span class="search-icon pe-2">
+                    <img src="./assets/images/Search.png" alt="" />
+                  </span>
+                  <input type="search" placeholder="Search" />
+                </div>
+              </form>
+            </div>
+            <div class="upload-file">
+              <a href="#" class="upload-file-btn flex-between" data-bs-toggle="modal" data-bs-target="#AddNewServiceModal">
+                <h6>Upload File</h6>
+                <span class="span-img flex-between ms-2"
+                  ><img src="./assets/images/Plus.png" alt="" />
+                </span>
+              </a>
+            </div>
+          </div>
+      <!--right content End-->
+      </div>
+    </header>
+      <!--Header end-->
+      <div class="main-inner">
+         <!--Sidebar start-->
+        <div class="sidebar flex flex-between">
+          <div class="nav-box">
+            <!--sidebar header start-->
+            <div class="sidebar-header flex-between py-1">
+              <div class="flex">
+                <div class="header-img flex-center">
+                  <img src="./assets/images/imageteam.png" alt="">
+                </div>
+                <div class="sidebar-header-content">
+                  <h6 class="user pt-1">user</h6>
+                  <h5 class="name pt-1">Smith</h5>
+                </div>
+              </div>
+              <div class="header-arrow">
+                <img src="./assets/images/arrowdown.png" alt="">
+              </div>
+            </div>
+            <!--siderbar header end-->
+            <nav>
+              <ul>
+                <li>
+                  <a href="javascript:void(0);">
+                    <div><img src="./assets/images/file.png" alt=""/></div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <span class="active">Files</span>
+                          </button>
+                        </h2>
+                        
+                      </div>
+                    </div>
+                  </a>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="accordion-list-box">
+                        <ul>
+                          <li>
+                            <a href="./cardDetail.html">Available Transcribe</a>
+                          </li>
+                          <li>
+                            <a href="./cardDetailSummarize.html">Available Summary</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="./dashboard.html">
+                    <div><img src="./assets/images/report.png" alt="" /></div>
+                    <span>Report</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <div><img src="./assets/images/setting.png" alt="" /></div>
+                    <span>Settings</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="logout-box">
+            <nav>
+              <ul>
+                <li>
+                  <a href="./login.html">
+                    <div><img src="./assets/images/support.png" alt="" /></div>
+                    <span>Support</span>
+                  </a>
+                </li>
+                <li class="active-list">
+                  <a href="./signIn.html">
+                    <img src="./assets/images/Sign-Out.png" alt="" />
+                    <span class="logout">Logout</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!--sidebar end-->
+        <!--right side content start-->
+        <div class="right-content-box">
+          <div class="right-inner-content-box pt-3">
+            <div class="flex activation-container flex-evenly">
+              <div class="activity-box">
+                <div class="activityinnerbox">
+                  <div class="activity-content flex-between">
+                    <div class="activity-header flex-center">
+                      <div class="activity greenbg"></div>
+                      <h5 class="song-type ps-1">MP4</h5>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="activity-header progres-box">
+                    <h5 class="mp3 pt-2">Hellow MP3</h5>
+                    <h5 class="song-type yellowText pt-2 pb-3">In Progress</h5>
+                  </div>
+                  <div class="activity-header flex-between pt-3 pb-2">
+                      <h5 class="song-type">Date : 31-1-2023</h5>
+                      <h5 class="song-type">Time : 10:40am</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="activity-box">
+                  <div class="activityinnerbox">
+                    <div class="activity-content flex-between">
+                      <div class="activity-header flex-center">
+                        <div class="activity redbg"></div>
+                        <h5 class="song-type ps-1">MP4</h5>
+                      </div>
+                      <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="activity-header progres-box">
+                      <h5 class="mp3 pt-2">Hellow MP3</h5>
+                      <h5 class="song-type greenText pt-2 pb-3">In Progress</h5>
+                    </div>
+                    <div class="activity-header flex-between pt-3 pb-2">
+                        <h5 class="song-type">Date : 31-1-2023</h5>
+                        <h5 class="song-type">Time : 10:40am</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="activity-box">
+                    <div class="activityinnerbox">
+                      <div class="activity-content flex-between">
+                        <div class="activity-header flex-center">
+                          <div class="activity greenbg"></div>
+                          <h5 class="song-type ps-1">MP4</h5>
+                        </div>
+                        <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="activity-header progres-box">
+                        <h5 class="mp3 pt-2">Hellow MP3</h5>
+                        <h5 class="song-type yellowText pt-2 pb-3">In Progress</h5>
+                      </div>
+                      <div class="activity-header flex-between pt-3 pb-2">
+                          <h5 class="song-type">Date : 31-1-2023</h5>
+                          <h5 class="song-type">Time : 10:40am</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="activity-box">
+                      <div class="activityinnerbox">
+                        <div class="activity-content flex-between">
+                          <div class="activity-header flex-center">
+                            <div class="activity blackbg"></div>
+                            <h5 class="song-type ps-1">MP4</h5>
+                          </div>
+                          <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="activity-header progres-box">
+                          <h5 class="mp3 pt-2">Hellow MP3</h5>
+                          <h5 class="song-type greenText pt-2 pb-3">In Progress</h5>
+                        </div>
+                        <div class="activity-header flex-between pt-3 pb-2">
+                            <h5 class="song-type">Date : 31-1-2023</h5>
+                            <h5 class="song-type">Time : 10:40am</h5>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+              <div class="flex activation-container flex-evenly pt-3">
+                <div class="activity-box">
+                  <div class="activityinnerbox">
+                    <div class="activity-content flex-between">
+                      <div class="activity-header flex-center">
+                        <div class="activity greenbg"></div>
+                        <h5 class="song-type ps-1">MP4</h5>
+                      </div>
+                      <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="activity-header progres-box">
+                      <h5 class="mp3 pt-2">Hellow MP3</h5>
+                      <h5 class="song-type yellowText pt-2 pb-3">In Progress</h5>
+                    </div>
+                    <div class="activity-header flex-between pt-3 pb-2">
+                        <h5 class="song-type">Date : 31-1-2023</h5>
+                        <h5 class="song-type">Time : 10:40am</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="activity-box">
+                    <div class="activityinnerbox">
+                      <div class="activity-content flex-between">
+                        <div class="activity-header flex-center">
+                          <div class="activity redbg"></div>
+                          <h5 class="song-type ps-1">MP4</h5>
+                        </div>
+                        <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="activity-header progres-box">
+                        <h5 class="mp3 pt-2">Hellow MP3</h5>
+                        <h5 class="song-type greenText pt-2 pb-3">In Progress</h5>
+                      </div>
+                      <div class="activity-header flex-between pt-3 pb-2">
+                          <h5 class="song-type">Date : 31-1-2023</h5>
+                          <h5 class="song-type">Time : 10:40am</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="activity-box">
+                      <div class="activityinnerbox">
+                        <div class="activity-content flex-between">
+                          <div class="activity-header flex-center">
+                            <div class="activity greenbg"></div>
+                            <h5 class="song-type ps-1">MP4</h5>
+                          </div>
+                          <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="activity-header progres-box">
+                          <h5 class="mp3 pt-2">Hellow MP3</h5>
+                          <h5 class="song-type yellowText pt-2 pb-3">In Progress</h5>
+                        </div>
+                          <div class="activity-header flex-between pt-3 pb-2">
+                            <h5 class="song-type">Date : 31-1-2023</h5>
+                            <h5 class="song-type">Time : 10:40am</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="activity-box">
+                        <div class="activityinnerbox">
+                          <div class="activity-content flex-between">
+                            <div class="activity-header flex-center">
+                              <div class="activity blackbg"></div>
+                              <h5 class="song-type ps-1">MP4</h5>
+                            </div>
+                            <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                          </div>
+                          <div class="activity-header progres-box">
+                            <h5 class="mp3 pt-2">Hellow MP3</h5>
+                            <h5 class="song-type greenText pt-2 pb-3">In Progress</h5>
+                          </div>
+                          <div class="activity-header flex-between pt-3 pb-2">
+                              <h5 class="song-type">Date : 31-1-2023</h5>
+                              <h5 class="song-type">Time : 10:40am</h5>
+                            </div>
+                          </div>
+                        </div>
+              </div>
+              <div class="flex activation-container flex-evenly pt-3">
+                <div class="activity-box">
+                  <div class="activityinnerbox">
+                    <div class="activity-content flex-between">
+                      <div class="activity-header flex-center">
+                        <div class="activity greenbg"></div>
+                        <h5 class="song-type ps-1">MP4</h5>
+                      </div>
+                      <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="activity-header progres-box">
+                      <h5 class="mp3 pt-2">Hellow MP3</h5>
+                      <h5 class="song-type yellowText pt-2 pb-3">In Progress</h5>
+                    </div>
+                    <div class="activity-header flex-between pt-3 pb-2">
+                        <h5 class="song-type">Date : 31-1-2023</h5>
+                        <h5 class="song-type">Time : 10:40am</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="activity-box">
+                    <div class="activityinnerbox">
+                      <div class="activity-content flex-between">
+                        <div class="activity-header flex-center">
+                          <div class="activity redbg"></div>
+                          <h5 class="song-type ps-1">MP4</h5>
+                        </div>
+                        <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="activity-header progres-box">
+                        <h5 class="mp3 pt-2">Hellow MP3</h5>
+                        <h5 class="song-type greenText pt-2 pb-3">In Progress</h5>
+                      </div>
+                      <div class="activity-header flex-between pt-3 pb-2">
+                          <h5 class="song-type">Date : 31-1-2023</h5>
+                          <h5 class="song-type">Time : 10:40am</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="activity-box">
+                      <div class="activityinnerbox">
+                        <div class="activity-content flex-between">
+                          <div class="activity-header flex-center">
+                            <div class="activity greenbg"></div>
+                            <h5 class="song-type ps-1">MP4</h5>
+                          </div>
+                          <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="activity-header progres-box">
+                          <h5 class="mp3 pt-2">Hellow MP3</h5>
+                          <h5 class="song-type yellowText pt-2 pb-3">In Progress</h5>
+                        </div>
+                        <div class="activity-header flex-between pt-3 pb-2">
+                            <h5 class="song-type">Date : 31-1-2023</h5>
+                            <h5 class="song-type">Time : 10:40am</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="activity-box">
+                        <div class="activityinnerbox">
+                          <div class="activity-content flex-between">
+                            <div class="activity-header flex-center">
+                              <div class="activity blackbg"></div>
+                              <h5 class="song-type ps-1">MP4</h5>
+                            </div>
+                            <a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                          </div>
+                          <div class="activity-header progres-box">
+                            <h5 class="mp3 pt-2">Hellow MP3</h5>
+                            <h5 class="song-type greenText pt-2 pb-3">In Progress</h5>
+                          </div>
+                          <div class="activity-header flex-between pt-3 pb-2">
+                              <h5 class="song-type">Date : 31-1-2023</h5>
+                              <h5 class="song-type">Time : 10:40am</h5>
+                            </div>
+                          </div>
+                        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--right side content end-->
+      </div>
+      <!--Upload file Modal start-->
+      <div class="modal fade" id="AddNewServiceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- <div class="modal-header px-4">
+              <h5 class="modal-title" id="exampleModalLabel">Add New Service</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div> -->
+            <div class="modal-body">
+                <form class="form-control">
+                  <div class="row">
+                  <div class="col-12 text-center">
+                    <div class="modal-heading">
+                    <h5 class="pb-3 fw-bold">Upload File</h5>
+                    </div>
+                  </div>
+                  <div class="col-12 p-0">
+                    <div class="upload-file-container">
+                      <div class="upload-file-box text-center py-3">
+                        <div class="upload-file-icon py-3">
+                          <input type="file" class="choose-file" id="file">
+                          <label for="file"><img src="./assets/images/cloud-computing.png" alt=""></label>
+                        </div class="upload-file-content">
+                        <h5 class="fw-bold">Upload MP4 or MP3 File</h5>
+                        <h5 class="mini-text pb-3">or drag and drop here</h5>
+                        <h5 class="mini-text">(mp3,mp4,m4a,webm)</h5>
+                      </div> 
+                    </div>
+                    </div>
+                    <div class="divider py-4 px-0 text-center flex-center"> 
+                      <div class="dividing-line"></div>
+                      <span class="px-2">or</span>
+                      <div class="dividing-line"></div>
+                    </div>
+                      
+                    <div class="modal-btn text-center w-100 p-0">
+                      <button class="modalbtn w-100">Save</button>
+                    </div>
+                  </div>
+                </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Uploa file Modal end-->  
+    </main>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./assets/js/bootstrap.bundle.js"
+    ></script>
+    <script type="text/javascript" src="./assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="./assets/js/custom.js"></script>
+    <script src="assets/plugins/global/plugins.bundle.js"></script>
+  </body>
+</html>
